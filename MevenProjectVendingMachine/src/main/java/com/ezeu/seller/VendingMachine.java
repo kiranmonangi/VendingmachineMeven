@@ -10,9 +10,9 @@ import java.util.ArrayList;
 public class VendingMachine {
 
     //Implementing  VendingMachine as a singleton object
-    private static VendingMachine instance = new VendingMachine();
+    public static VendingMachine instance = new VendingMachine();
 
-    private ArrayList<VendingItem> items;
+    public ArrayList<VendingItem> items;
 
     private VendingMachine() {
         this.items = new ArrayList<VendingItem>();
@@ -34,7 +34,7 @@ public class VendingMachine {
     }
 
     public VendingItem getItem(int index, int qty) {
-        if (index >= 0 && index < items.size() && items.get(index).getQuantity() > qty) {
+        if (index >= 0 && index < items.size() && items.get(index).getQuantity() >=qty) {
             VendingItem item = items.get(index);
             item.setQuantity(item.getQuantity() - qty);
             return new VendingItem(item);

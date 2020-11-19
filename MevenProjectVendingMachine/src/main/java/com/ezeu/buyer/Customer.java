@@ -15,7 +15,7 @@ public class Customer {
 
     public void getItemFromVendingMachine() {
         System.out.println(vendingMachine);
-        System.out.println("Choose item number and the Quantity:");
+        System.out.println("Choose item number and the Quantity:  ");
         Scanner sc = new Scanner(System.in);
         int index = sc.nextInt() - 1;
         int qty = sc.nextInt();
