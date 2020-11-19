@@ -14,7 +14,7 @@ public class VendingMachine {
 
     public ArrayList<VendingItem> items;
 
-    private VendingMachine() {
+    public VendingMachine() {
         this.items = new ArrayList<VendingItem>();
         this.items.add(new VendingItem("COKE", 10, 10 ));
     }
@@ -54,3 +54,5 @@ public class VendingMachine {
         return result;
     }
 }
+
+

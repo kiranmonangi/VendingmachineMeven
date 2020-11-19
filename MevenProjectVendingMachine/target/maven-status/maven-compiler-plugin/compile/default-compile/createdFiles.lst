@@ -1,6 +1,7 @@
 com\ezeu\buyer\Customer.class
 com\ezeu\seller\Mainfile.class
-com\ezeu\seller\Owner.class
 com\ezeu\utils\InvalidItemOrQuantityException.class
-com\ezeu\seller\VendingItem.class
 com\ezeu\seller\VendingMachine.class
+com\ezeu\seller\Owner.class
+com\ezeu\seller\ChildVendingMachine.class
+com\ezeu\seller\VendingItem.class
